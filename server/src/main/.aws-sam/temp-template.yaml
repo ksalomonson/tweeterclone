@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: edu.byu.cs.tweeter.server.lambda.GetFollowersHandler
+      CodeUri: C:\Users\kenny\AndroidStudioProjects\tweeter-samples-java-server-sample\server
+      Runtime: java11
+      Architectures:
+        - x86_64
